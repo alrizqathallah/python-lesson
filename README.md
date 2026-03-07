@@ -37,3 +37,21 @@
 - Python tidak menggunakan Semicolon **;** untuk menutup sebuah _statement_ kode.
 - Tidak menggunakan _parentheses_ atau _curly bracket_ untuk membangun blok kode.
 - Menggunakan _space-indentation_ untuk menulisan blok kode yang akan dieksekusi.
+
+## Instalasi Python
+
+Sebelum menggunakna Python, diperlukan intsalasi Python terlebih dahulu pada *local-machine* yang digunakan.
+
+Python tersedia untuk perangkat berbasis *Windows*, *Linux*, *Mac*, dan lainnya. Disesuaikan dengan sistem operasi yang digunakan.
+
+Dapat dikunjungi: https://www.python.org/downloads/ 
+
+- Instalasi menggunakan Python 3.xxx (Versi Python 3)
+- Menggunakan *standalone-installer* untuk menginstal versi Python secara spesifik, contoh Python 3.14.3. Sangat disaranakan untuk pemula.
+- Menggunakan *installer-manager*, untuk professional yang membutuhkan beberapa versi Python dalam kebutuhan pengembangan, yang dapat diatur sesuai kebutuhan.
+
+### Instalasi dan Cek Instalasi
+
+- Menginstal Python sangat mudah, bisa diikuti dan ditempatkan pada PATH yang sesuai untuk sistem operasi Windows.
+- `python --version` untuk mengecek python dan versi yang terinstal dikomputer, pada terminal.
+- 
