@@ -54,4 +54,3 @@ Dapat dikunjungi: https://www.python.org/downloads/
 
 - Menginstal Python sangat mudah, bisa diikuti dan ditempatkan pada PATH yang sesuai untuk sistem operasi Windows.
 - `python --version` untuk mengecek python dan versi yang terinstal dikomputer, pada terminal.
-- 
