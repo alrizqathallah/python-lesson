@@ -233,3 +233,145 @@ Seringkali pemula bingung antara `==` (operator perbandingan) dan `is` (operator
 `==` menyamakan nilai (value), memeriksa apakah sebuah objek atau variabel memiliki nilai yang sama.
 
 `is` menyamakan identitas (variabel), memeriksa apakah sebauh objek atau variabel berada dalam alamat memori yang sama.
+
+## Operator Membership
+
+Jika operator identitas itu memastikan sebuah variabel, operator membership berguna untuk memvalidasi sebuah value atau variabel merupakan sebuah urutan (strings, list, tuple, atau dictionary).
+
+### Operator `in`.
+
+Operator `in` akan mengembalikan nilai True, jika nilai yang dicari berada dalam urutan atau sebuah objek.
+
+Kita gambarkan dengan `list` buah-buahan
+
+contoh:
+
+```Python
+fruits = ["Orange", "Mango", "Apple"]
+print("Mango" in fruits)
+# Jika "Mango" ada didalam list, maka akan mengembalikan nilai True.
+# Jika tidak, akan mengembalikan nilai False
+```
+
+### Operator `not in`.
+
+Operator `not in` adalah kebalikan dari in.
+
+Operator ini memastikan sebuah value tidak berada didalam objek.
+
+contoh:
+
+```Python
+cars = ["Mercedez-Benz", "BMW", "Audi"]
+print("BMW" not in cars)
+# Jika "BMW" ada didalam list, maka hasil yang dikembalikan adalah False.
+# Sebaliknya, jika "BMW" tidak ada dialam list, maka akan mengembalikan nilai True.
+```
+
+### Cara kerja pada sebauh tipe data.
+
+Dalam tipe data string, operator membership dapat digunakan untuk mengecek elemen pada string.
+
+contoh:
+
+```Python
+String = "Hello Python".lower()
+print("py" in String) # True
+print("z" in String) # False
+# Mengecek apakah elemen "py" ada didalam String.
+```
+
+Didalam `list` dan `tuple`.
+
+Operator membership mengecek apakah ada nilai yang dimaksud berada didalam objek.
+
+contoh:
+
+```Python
+List = ["Ronaldo", "Messi", "Neymar"].lower()
+Tuple = ("Rossi", "Stoner", "Pedrossa").lower()
+
+print("Ronaldo" in List)
+print("Kaka" in List)
+
+print("Stoner" in Tuple)
+print("Marquez" in Tuple)
+```
+
+Operator membership untuk tipe data Dictionary.
+
+Bertugas untuk mengecek, apakah sebuah *key* ada dialam dictionary.
+
+contoh:
+
+```Python
+Dictionary = {"Nama": "Ujang Rambo", "usia": 20, "Alamat": "Bandung"}
+print("Nama" in Dictionary)
+```
+
+**Penting** dalam dictionary, operator membership hanya memastikan sebuah *key* tersedia atau ada dalam sebuah objek dictionary.
+**Penting** operator membership menerapkan *case-sensitivity*.
+
+### Contoh Kasus
+
+```Python
+username = ['admin', 'root', 'tester', 'superuser']
+new_username = 'admin'
+
+if new_username in username:
+  print(f'Sorry, your username: {new_username} cannot be used!')
+else:
+  print(f'your username: {new_username} can be used!')
+```
+
+## Opeartor Bitwise
+
+Jika operator logika bekerja dengan nilai True atau False, Operator Bitwise bekerja jauh lebih dalam, yaitu di level biner (0 dan 1). Operator ini memanipulasi angka bulat (integer) dengan cara membandingkan atau menggeser bit-bit penyusunnya.
+
+Bayangkan Anda sedang membedah sebuah angka untuk melihat mesin di dalamnya. Misalnya, angka 5 dalam biner adalah 0101, dan angka 3 adalah 0011.
+
+Berikut adalah 6 operator bitwise di Python:
+
+- AND (&)
+Membandingkan tiap bit; hasilnya 1 hanya jika kedua bit bernilai 1.
+
+- OR (|)
+Hasilnya 1 jika salah satu atau kedua bit bernilai 1.
+
+- XOR (^)
+Hasilnya 1 jika bitnya berbeda. Jika sama (keduanya 0 atau keduanya 1), hasilnya 0.
+
+- NOT (~)Membalikkan semua bit (0 jadi 1, 1 jadi 0). Di Python, ini menggunakan rumus $-(x + 1)$.
+
+- Shift Left (<<)Menggeser bit ke kiri dan mengisi bagian kanan dengan nol. Ini sama dengan mengalikan angka dengan $2^n$.
+
+- Shift Right (>>)Menggeser bit ke kanan. Ini sama dengan membagi angka dengan $2^n$ (pembulatan ke bawah).
+
+### Kapan Kita Menggunakannya?
+Meskipun jarang digunakan dalam pembuatan aplikasi web biasa, operator bitwise sangat krusial dalam:
+
+- Kompresi data dan enkripsi.
+
+- Pemrograman sistem (low-level) atau hardware/IoT.
+
+- Grafika Komputer untuk manipulasi warna (RGB).
+
+- Optimasi performa pada algoritma tertentu.
+
+## Operator Presedence
+
+Operator Precedence (Urutan Hierarki Operator) adalah aturan yang menentukan operator mana yang akan dieksekusi lebih dulu dalam sebuah ekspresi matematika atau logika.
+
+Sama seperti aturan KABATAKU (Kali, Bagi, Tambah, Kurang) dalam matematika sekolah, Python juga memiliki tingkatan prioritas agar hasil perhitungan tidak membingungkan.
+
+Urutan Prioritas (Dari Tertinggi ke Terendah)
+Berikut adalah tabel operator dari yang paling kuat (dikerjakan duluan) hingga yang paling lemah:
+
+- `()` Tanda kurung, selalu nomor 1
+- `**` Exponent (pangkat)
+- `*`, `/`, `%` dan `//`
+- `+` dan `-`
+- Operator Perbandingan, Identitas, dan Membership
+- `not`
+- `and`
+- `or`

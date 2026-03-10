@@ -89,3 +89,35 @@ z = x
 
 print(x is not y) # True, benar x dan y tidak sama
 print(x is not z) # False, x dan z itu sama
+
+fruits = ["Orange", "Mango", "Apple"]
+print("Mango" in fruits) # True
+
+cars = ["Mercedez-Benz", "BMW", "Audi"]
+print("BMW" not in cars) # False
+print("Volkswagen" not in cars) # True
+
+String = "Hello Python".lower()
+print("py" in String) # True
+print("z" in String) # False
+
+List = ["Ronaldo", "Messi", "Neymar"]
+Tuple = ("Rossi", "Stoner", "Pedrossa")
+
+print("Ronaldo" in List) # True
+print("Kaka" in List) # False
+
+print("Stoner" in Tuple) # True
+print("Marquez" in Tuple) # False
+
+Dictionary = {"Nama": "Ujang Rambo", "usia": 20, "Alamat": "Bandung"}
+print("Nama" in Dictionary)
+print("Ujang Rambo" in Dictionary)
+
+username = ['admin', 'root', 'tester', 'superuser']
+new_username = 'citer'
+
+if new_username in username:
+  print(f'Sorry, your username: "{new_username}" cannot be used!')
+else:
+  print(f'your username: "{new_username}" can be used!')
