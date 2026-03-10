@@ -16,7 +16,7 @@ this_list = ["List", "Tuple", "Dictionary", "Set"]
 print(this_list)
 ```
 
-## List Items
+### List Items
 
 Nilai yang ditampung pada list disebut dengan *item* list.
 
@@ -50,7 +50,7 @@ fruits = ["Apple", "Mango", "Cherry", "Apple", "Mango"]
 print(fruits)
 ```
 
-## Panjang List (List Length)
+### Panjang List (List Length)
 
 Panjang list yang dibuat dapat diketahui.
 
@@ -64,7 +64,7 @@ fruits = ["Apple", "Mango", "Cherry", "Apple", "Mango"]
 print(len(fruits))
 ```
 
-## Tipe Data pada List
+### Tipe Data pada List
 
 List dapat menampung berbagai tipe data
 
@@ -88,7 +88,7 @@ Jika kita coba cek masing-masing list dengan menggunakan method `type()`.
 
 Hasil yang dikembalikan adalah `list`, karena python mendefinisikan list dengan tipe data list.
 
-## List Constructor
+### List Constructor
 
 Kita juga dapat membuat list dengan menggunakan constructor.
 
@@ -100,4 +100,57 @@ contoh:
 # List Constructor
 the_list = list(("Bengs", 28, 1.81))
 print(the_list)
+```
+
+## Access List Items
+
+List item dapat diakses dengan mengacu pada urutan indexnya.
+
+contoh:
+
+```Python
+# Access List
+cars = ["Mercedez", "BMW", "Audi", "Volkswagen", "Porsche"]
+print(cars[1]) # BMW
+```
+
+Untuk mengakses item pada list, juga dapat menggunakan minus indexing.
+
+contoh:
+
+```Python
+# Access List
+cars = ["Mercedez", "BMW", "Audi", "Volkswagen", "Porsche"]
+print(cars[1]) # BMW
+print(cars[-1]) # Porsche
+print(cars[-2]) # Volkswagen
+```
+
+Selain menggunakan minus indexing, juga dapat menggunakn range indexing
+
+contoh:
+
+```Python
+# Access List
+cars = ["Mercedez", "BMW", "Audi", "Volkswagen", "Porsche"]
+print(cars[1]) # BMW
+print(cars[-1]) # Porsche
+print(cars[-2]) # Volkswagen
+print(cars[1:4]) # "BMW", "Audi", "Volkswagen",
+print(cars[:4]) # "Mercedez", "BMW", "Audi", "Volkswagen"
+print(cars[1:]) # "BMW", "Audi", "Volkswagen", "Porsche"
+print(cars[-4:-1]) # "BMW", "Audi", "Volkswagen"
+```
+
+Kita juga dapat mengecek, apakah sebuah item ada dalam list.
+
+contoh:
+
+```Python
+# Access List
+cars = ["Mercedez", "BMW", "Audi", "Volkswagen", "Porsche"]
+if "Mercedez" in cars:
+  print("Mercedez, exist!")
+else:
+  print("Mercedez, doesn't exist!")
 ```
