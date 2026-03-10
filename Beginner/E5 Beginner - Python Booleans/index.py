@@ -16,3 +16,32 @@ print(bool(10)) # Truthy
 print(bool("10")) # Truthy
 print(bool(0)) # Falsy
 print(bool("")) # Falsy
+print(bool(" ")) # Truthy
+# Falsy
+print(bool([]))
+print(bool(()))
+print(bool({}))
+# Falsy
+print(bool(False))
+print(bool(None))
+
+class myClass():
+  def __len__(self):
+    return 0
+
+myObj = myClass()
+print(bool(myObj))
+
+def myFunction():
+  return True
+
+print(myFunction())
+
+if myFunction():
+  print("YES!")
+else:
+  print("NO!")
+  
+x = 1000
+print(isinstance(x, int)) # True
+print(isinstance(x, str)) # False
