@@ -154,3 +154,115 @@ if "Mercedez" in cars:
 else:
   print("Mercedez, doesn't exist!")
 ```
+
+## Change List Items
+
+### Merubah nilai item pada list
+
+Untuk mengganti nilai pada item, perlu spesifik pada index item.
+
+contoh:
+
+```Python
+# Mengganti nilai item
+ballon_dor = ["Messi", "Ronaldo", "Mbappe", "Halland", "Bengs"]
+print(ballon_dor)
+
+ballon_dor[4] = "Alrizq"
+print(ballon_dor)
+
+ballon_dor[2:4] = ["Vini", "Pedri"]
+print(ballon_dor)
+```
+
+### Insert items
+
+Untuk mengganti nilai item, selain langsung mengganti melalui index.
+
+Bisa menggunakan fungsi `insert()`
+
+contoh:
+
+```Python
+# Mengganti nilai item
+ballon_dor = ["Messi", "Ronaldo", "Mbappe", "Halland", "Bengs"]
+print(ballon_dor)
+
+ballon_dor[4] = "Alrizq"
+print(ballon_dor)
+
+ballon_dor[2:4] = ["Vini", "Pedri"]
+print(ballon_dor)
+```
+
+## Menambahkan list items
+
+### Append
+
+`.append()` merupakan method yang digunakan untuk dinambahkan satu item ke akhir list
+
+Merupakan metode yang paling umum digunakan.
+
+Hanya menambahkan 1 elemen saja.
+
+contoh:
+
+```Python
+# Append Items
+formula_one = ["RedBull", "Mercedez", "Ferrari", "Audi", "McLaren", "Aston Martin", "Renault"]
+formula_one.append("Alpine")
+
+print(formula_one)
+```
+
+### Insert
+
+`.insert()` dapat digunakan item secara lebih spesifik.
+
+Index dapat ditentukan, dengan menetapkan index yang dituju dan nilai yang dimasukan.
+
+contoh: 
+
+```Python
+# Insert Items
+formula_one = ["RedBull", "Mercedez", "Ferrari", "Audi", "McLaren", "Aston Martin", "Renault"]
+formula_one.insert(1, "Alpine")
+
+print(formula_one)
+```
+
+### Extend
+
+Dengan method `.extend()` memungkinkan untuk menambahkan banyak item dari list yang berbeda atau tipe data iterable lainnya. 
+
+Item tersebut akan ditambahkan dibagian akhir.
+
+contoh:
+
+```Python
+# Extend
+formula_one = ["RedBull", "Mercedez", "Ferrari", "Audi", "McLaren", "Aston Martin", "Renault"]
+moto_gp = ["Ducati", "Honda", "Yamaha", "KTM", "Aprilia"]
+formula_one.extend(moto_gp)
+
+print(formula_one)
+```
+
+### Operator concatenation
+
+Selain menggunakan operator diatas, kita juga dapat menambahkan item dengan menggunakan operator concate `+`.
+
+contoh:
+
+```Python
+# concatenation
+formula_one = ["RedBull", "Mercedez", "Ferrari", "Audi", "McLaren", "Aston Martin", "Renault"]
+moto_gp = ["Ducati", "Honda", "Yamaha", "KTM", "Aprilia"]
+
+grand_prix = formula_one + moto_gp
+
+print(grand_prix)
+```
+
+## Menghapus List items
+

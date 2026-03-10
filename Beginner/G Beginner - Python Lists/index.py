@@ -39,3 +39,38 @@ if "Mercedez" in cars:
   print("Mercedez, exist!")
 else:
   print("Mercedez, doesn't exist!")
+  
+# Mengganti nilai item
+ballon_dor = ["Messi", "Ronaldo", "Mbappe", "Halland", "Bengs"]
+print(ballon_dor)
+
+ballon_dor[4] = "Alrizq"
+print(ballon_dor) 
+
+ballon_dor[2:4] = ["Vini", "Pedri"]
+print(ballon_dor)
+
+ballon_dor.insert(1, "Bambang")
+print(ballon_dor)
+
+# Append Items
+formula_one = ["RedBull", "Mercedez", "Ferrari", "Audi", "McLaren", "Aston Martin", "Renault"]
+formula_one.append("Alpine")
+
+print(formula_one)
+
+# Insert Items
+formula_one.insert(1, "Alpine")
+
+print(formula_one)
+
+# Extend
+moto_gp = ["Ducati", "Honda", "Yamaha", "KTM", "Aprilia"]
+formula_one.extend(moto_gp)
+
+print(formula_one)
+
+# Concatenation
+grand_prix = formula_one + moto_gp
+
+print(grand_prix)
